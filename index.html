@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="store">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular theme ecommerce</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  <main class="container">
+    <h1>{{'Angular theme ecommerce'}}</h1>
+
+    <div class="row" ng-controller='StoreControl as store'>
+
+        <div class="col-md-12" ng-repeat="product in store.products | orderBy: '-price' " ng-hide="product.soldOut">
+          <h2>{{product.name | uppercase}}</h2>
+          <p>{{product.price | currency}}</p>
+
+          <div class="galery" ng-show="product.images.length">
+            <img ng-src="{{product.images[0]}}" alt="" />
+              <ul class="img-thumbnails clearfix">
+                <li class="small-image pull-left thumbnail" ng-repeat="image in product.images" >
+                  <img ng-src="{{image}}" style="width: 100px;"/>
+                </li>
+              </ul>
+
+            <button class="" name="button" ng-hide="product.canPurchase"> Add to cart</button>
+
+            <!--Tab Selec -->
+              <section ng-controller="TabController as tab">
+                <ul class="nav nav-pills">
+                  <li ng-class="">
+                    <a href ng-click="tab.selectTab(1)">Description</a>
+                  </li>
+
+                  <li ng-class="">
+                    <a href ng-click="tab.selectTab(2)">Specifications</a>
+                  </li>
+
+                  <li ng-class="">
+                    <a href ng-click="tab.selectTab(3)">Reviews</a>
+                  </li>
+                </ul>
+                <div class="panel" ng-show="tab.isSelected(1)">
+                  <h4>Description</h4>
+                  <p>{{product.description}}</p>
+                </div>
+
+                <div class="panel" ng-show="tab.isSelected(2)">
+                  <h4>Specifications</h4>
+                  <p></p>
+                </div>
+
+                <div class="panel" ng-show="tab.isSelected(3)">
+                  <h4>Reviews</h4>
+                  <p></p>
+                </div>
+              </section>
+            <!--Tab Selec -->
+          </div>
+
+
+    </div><!-- /.row -->
+  </main>
+
+
+
+
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
