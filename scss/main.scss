@@ -6,7 +6,7 @@
 
 $red: #333333;
 $green: #001eff;
-
+$title: #666;
 
 
 
@@ -29,6 +29,37 @@ $green: #001eff;
     & img{
       max-width: 200px;
     }
+  }
+}
+a.header__btn-mobile.btn {
+    padding: 0;
+    font-size: 2em;
+}
+
+
+/****************
+**PRODUCT
+*****************/
+
+.product{
+  &__name{
+    color: $title;
+    text-align: center;
+    font-weight: 200;
+  }
+  &__gallery{
+    &.img-wrap{
+      text-align: center;
+    }
+  }
+  &__price{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+  }
+  &__btn{
+    border-radius: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -57,6 +88,14 @@ $green: #001eff;
   }
 }
 
+/****************
+**BTN
+*****************/
+
+.btn {
+    border-radius: 0;
+}
+
 
 .img-wrap img {
     width: 300px;
@@ -65,4 +104,16 @@ $green: #001eff;
     margin-right: auto;
     margin-left: auto;
     width: 50px;
+}
+
+
+@media screen and (max-width: 789px) {
+  .header{
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+  }
+  .product{
+    margin-top: 85px;
+  }
 }

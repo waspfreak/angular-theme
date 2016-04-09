@@ -20,9 +20,11 @@
 
           <!-- Image Gallery  -->
           <product-gallery></product-gallery>
+          <product-description></product-description>
 
           <p class="product__price">{{product.price | currency}}</p>
-          <button class="product__btn btn btn-primary" name="button" ng-hide="product.canPurchase"> Add to cart</button>
+          <button class="product__btn btn btn-primary btn-lg btn-block" name="button" ng-hide="product.canPurchase"> Add to cart</button>
+
 
           <!--Tab Selec -->
           <product-tab></product-tab>
@@ -36,9 +38,15 @@
     <footer class="footer">footer</footer>
 
 
-
+    <script type="text/javascript">
+    (function($) {
+        fakewaffle.responsiveTabs(['xs', 'sm']);
+      })(jQuery);
+    </script>
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
     <script src="js/lib/angular.min.js"></script>
     <script src="js/app.js"></script>
-        <script src="js/products.js"></script>
+    <script src="js/products.js"></script>
+
   </body>
 </html>

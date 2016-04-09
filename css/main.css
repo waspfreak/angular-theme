@@ -18,6 +18,27 @@
     .header__logo img {
       max-width: 200px; }
 
+a.header__btn-mobile.btn {
+  padding: 0;
+  font-size: 2em; }
+
+/****************
+**PRODUCT
+*****************/
+.product__name {
+  color: #666;
+  text-align: center;
+  font-weight: 200; }
+.product__gallery.img-wrap {
+  text-align: center; }
+.product__price {
+  display: block;
+  font-size: 2em;
+  text-align: center; }
+.product__btn {
+  border-radius: 0;
+  margin-bottom: 20px; }
+
 /****************
 **FOOTER
 *****************/
@@ -33,6 +54,12 @@
 .ng-dirty.ng-invalid {
   border-color: #333333; }
 
+/****************
+**BTN
+*****************/
+.btn {
+  border-radius: 0; }
+
 .img-wrap img {
   width: 300px; }
 
@@ -40,5 +67,14 @@
   margin-right: auto;
   margin-left: auto;
   width: 50px; }
+
+@media screen and (max-width: 789px) {
+  .header {
+    background: #fff;
+    position: fixed;
+    z-index: 999; }
+
+  .product {
+    margin-top: 85px; } }
 
 /*# sourceMappingURL=main.css.map */

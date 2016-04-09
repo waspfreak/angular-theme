@@ -21,12 +21,12 @@ var gems =
 [
   {
     name: 'Tourmaline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, ',
     price: 2.50,
     canPurchase: false,
     soldOut: false,
     images:[
-      "img/Brandberg-Amethyst-2.jpg",
+      "img/Brandberg-Amethyst-5.jpg",
       "img/fluorite6.jpg",
       "img/fluorite4.jpg",
     ],
@@ -52,14 +52,14 @@ var gems =
   },
   {
     name: 'Citrine',
-    description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
+    description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, ',
     price: 3.93,
     canPurchase: false,
     soldOut: false,
     images:[
-      "img/Jasper-green.png",
-      "img/Jasper-red.png",
-      "img/Jasper-with-Hematite.png",
+      "img/Brandberg-Amethyst-2.jpg",
+      "img/fluorite6.jpg",
+      "img/fluorite4.jpg",
     ],
     shine: 8,
     price: 110.50,
@@ -84,14 +84,14 @@ var gems =
 
   {
     name: 'Amethyst',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, ',
     price: 1.5,
     canPurchase: false,
     soldOut: false,
     images:[
-      "img/Jasper-green.png",
-      "img/Jasper-red.png",
-      "img/Jasper-with-Hematite.png",
+      "img/Brandberg-Amethyst-4.jpg",
+      "img/fluorite6.jpg",
+      "img/fluorite4.jpg",
     ],
     shine: 8,
     price: 110.50,
