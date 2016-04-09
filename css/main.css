@@ -1,5 +1,44 @@
 @import url(bootstrap.min.css);
+/****************
+**COLORS
+*****************/
 .h1, h1 {
   font-size: 39px; }
+
+/****************
+**HEADER
+*****************/
+.header {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  overflow: hidden;
+  width: 100%; }
+  .header__logo {
+    padding: 0; }
+    .header__logo img {
+      max-width: 200px; }
+
+/****************
+**FOOTER
+*****************/
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 1rem; }
+
+/****************
+**FORM VALIDATIONS USE ANGULAR CLASS
+*****************/
+.ng-dirty.ng-valid {
+  border-color: #001eff; }
+.ng-dirty.ng-invalid {
+  border-color: #333333; }
+
+.img-wrap img {
+  width: 300px; }
+
+.thumbnail > img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50px; }
 
 /*# sourceMappingURL=main.css.map */
